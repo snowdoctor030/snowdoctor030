@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Christian Akili | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+    <div class="nav-container">
+        <a href="#home" class="logo">Christian</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="home">
+    <div class="hero-content">
+        <h1>Christian <span>Akili</span></h1>
+        <p class="subtitle">Tech Enthusiast · <span>Hardware Tinkerer</span> · Problem Solver</p>
+        <a href="#about" class="scroll-btn">↓</a>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+    <div class="container reveal">
+        <h2>About Me</h2>
+        <div class="about-grid">
+            <div class="about-info">
+                <h3 class="name-glow">Christian Akili Shayo</h3>
+                <div class="detail">
+                    <div class="icon icon-blue">📍</div>
+                    <span>Dar Es Salaam — Tanzania</span>
+                </div>
+                <div class="detail">
+                    <div class="icon icon-green">🎓</div>
+                    <span>Dar es Salaam Institute of Technology</span>
+                </div>
+                <div class="detail">
+                    <div class="icon icon-purple">⚡</div>
+                    <span>Driven by curiosity — I take things apart (sometimes literally) to understand how they work, then put them back together better,sometimes after putting them together they never work the same but its a part of learning.</span>
+                </div>
+                <div class="detail">
+                    <div class="icon icon-black">🔧</div>
+                    <span>Self-taught troubleshooter, circuit builder, and lifelong learner.</span>
+                </div>
+            </div>
+            <div class="typing-wrapper" id="typingWrapper">
+                <span id="typingText"></span>
+                <span class="cursor" id="cursor">|</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+    <div class="container reveal">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="emoji">🖥️</div>
+                <h3>Troubleshooting</h3>
+                <ul>
+                    <li>Hardware diagnostics & repair</li>
+                    <li>Windows installation & driver fixes</li>
+                    <li>Software configuration & recovery</li>
+                    <li>System optimization</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="emoji">💻</div>
+                <h3>Operating Systems</h3>
+                <ul>
+                    <li>Kali Linux — penetration testing</li>
+                    <li>Ubuntu — daily driver & servers</li>
+                    <li>macOS — navigation & support</li>
+                    <li>Windows — expert-level</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="emoji">⚙️</div>
+                <h3>Microcontrollers</h3>
+                <ul>
+                    <li>ATmega series programming</li>
+                    <li>Arduino — sensors & automation</li>
+                    <li>Embedded C / Wiring</li>
+                    <li>Circuit prototyping</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="emoji">🛠️</div>
+                <h3>Software Tools</h3>
+                <ul>
+                    <li>Proteus — circuit simulation</li>
+                    <li>LT Spice — analog simulation</li>
+                    <li>Huawei eNSP — network simulation</li>
+                    <li>Cisco Packet Tracer</li>
+                    <li>GIMP — photo editing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+    <div class="container reveal">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-number">PROJ-001</div>
+                <h3>Power Supply — The One That Almost Caught Fire</h3>
+                <span class="tag tag-blue">electronics</span>
+                <p>My very first electronics project — a simple soldered power supply. Simple in theory, a disaster in practice.</p>
+                <div class="story">
+                    &ldquo;I soldered all three legs of the voltage regulator onto the same copper path. When I powered it on, the LED wouldn't light up. The regulator was heating up so fast I could smell it. Took me hours to realize what I'd done. I learned more about PCB design that day than any textbook could teach me.&rdquo;
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-number">PROJ-002</div>
+                <h3>555 Timer Clock &amp; 4-Way Traffic Light</h3>
+                <span class="tag tag-green">logic design</span>
+                <p>A 4-way traffic light system built entirely with logic gates — no microcontroller, pure hardware logic.</p>
+                <div class="story">
+                    &ldquo;Everyone in class had to simulate it in Proteus. Most gave up. I spent two straight days — barely sleeping — debugging and tweaking until the simulation worked perfectly. I was the only one who got it running. Seeing those LEDs blink in sequence after all that effort? Pure magic.&rdquo;
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-number">PROJ-003</div>
+                <h3>GIMP Photo Editing</h3>
+                <span class="tag tag-purple">graphic design</span>
+                <p>Exploring creativity through photo manipulation — layers, color grading, compositing, and more.</p>
+                <div class="story">
+                    &ldquo;Sometimes you need a different kind of circuit — the creative kind. I used GIMP to edit and compose this image. Layer by layer, adjustment by adjustment, until it looked right. Different tools, same problem-solving mindset.&rdquo;
+                </div>
+                <div class="project-placeholder">
+                    <img src="scooby.jpg" alt="Gimp picture" class="project-img">    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+    <div class="container reveal">
+        <h2>Contact Me</h2>
+        <div class="contact-grid">
+            <a href="mailto:chistianakili@gmail.com" class="contact-item">
+                <div class="contact-icon icon-blue">✉️</div>
+                <div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">chistianakili@gmail.com</div>
+                </div>
+            </a>
+            <a href="tel:+255743935996" class="contact-item">
+                <div class="contact-icon icon-green">📞</div>
+                <div>
+                    <div class="contact-label">Phone</div>
+                    <div class="contact-value">+255 743 935 996 / 0743 935 996</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>&copy; 2026 <span>Christian Akili</span> — Built with ❤️ and a lot of debugging</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
