@@ -248,7 +248,7 @@ nav {
     background: #3b82f6;
     margin-left: 2px;
     vertical-align: text-bottom;
-    animation: blink 0.8s step-end infinite;
+    animation: blink 3.8s step-end infinite;
 }
 .typing-wrapper .cursor.hidden { opacity: 0; }
 @keyframes blink {
