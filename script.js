@@ -51,3 +51,31 @@ const nav = document.querySelector('nav');
 window.addEventListener('scroll', () => {
     nav.style.borderBottomColor = window.scrollY > 50 ? 'var(--border)' : 'transparent';
 });
+
+// ===== LIGHTBOX =====
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+
+document.querySelectorAll('.gimp-thumb').forEach(thumb => {
+    thumb.addEventListener('click', () => {
+        lightboxImg.src = thumb.src;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+lightboxClose.addEventListener('click', closeLightbox);
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+});
