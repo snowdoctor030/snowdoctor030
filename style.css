@@ -241,21 +241,6 @@ nav {
     position: relative;
     min-height: 200px;
 }
-.typing-wrapper .cursor {
-    display: inline-block;
-    width: 2px;
-    height: 1.2em;
-    background: #3b82f6;
-    margin-left: 2px;
-    vertical-align: text-bottom;
-    animation: blink 3.8s step-end infinite;
-}
-.typing-wrapper .cursor.hidden { opacity: 0; }
-@keyframes blink {
-    0%, 100% { opacity: 0; }
-    0% { opacity: 0; }
-}
-
 /* ===== SKILLS ===== */
 .skills-grid {
     display: grid;
